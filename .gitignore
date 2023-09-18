@@ -1,33 +1,36 @@
 # Repo-specific GitIgnore ----------------------------------------------------------------------------------------------
-*.jpg
-*.jpeg
-*.png
-*.bmp
-*.tif
-*.tiff
-*.heic
-*.JPG
-*.JPEG
-*.PNG
-*.BMP
-*.TIF
-*.TIFF
-*.HEIC
-*.mp4
-*.mov
-*.MOV
-*.avi
-*.data
-*.json
-*.cfg
-!setup.cfg
-!cfg/yolov3*.cfg
+# *.jpg
+# *.jpeg
+# *.png
+# *.bmp
+# *.tif
+# *.tiff
+# *.heic
+# *.JPG
+# *.JPEG
+# *.PNG
+# *.BMP
+# *.TIF
+# *.TIFF
+# *.HEIC
+# *.mp4
+# *.mov
+# *.MOV
+# *.avi
+# *.data
+# *.json
+# *.cfg
+# !setup.cfg
+# !cfg/yolov3*.cfg
 
 storage.googleapis.com
-runs/*
-data/*
+
+data/train_data/images/*
+data/train_data/labels/*
 data/images/*
-!data/*.yaml
+runs/detect/*
+runs/train/*/train_*
+
 !data/hyps
 !data/scripts
 !data/images
@@ -49,7 +52,7 @@ VOC/
 
 # Neural Network weights -----------------------------------------------------------------------------------------------
 *.weights
-*.pt
+
 *.pb
 *.onnx
 *.engine
